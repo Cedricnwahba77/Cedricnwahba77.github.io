@@ -1,0 +1,98 @@
+/* Main Navbar */
+
+#navbar-color{
+    background-color: #003367;
+    padding: -12px 15px;
+    font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 1024px){
+    #navbar-color{
+        background-color: #304E89;
+        padding: -12px 15px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+#navbar-brand-color{
+    background-color: #304E89;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.img-navbar{
+    width: 40px;
+}
+
+/* ======================================= */
+/* ============== SECTIONS =============== */
+/* ======================================= */
+.section { position: relative; padding: 50px 0; }
+
+.title { position: relative; z-index: 2; text-transform: uppercase; font-weight: bold; margin-bottom: 30px; color: #1e2e32; font: italic 1.2em "Fira Sans", serif;}
+.title .fa { margin-right: 7px; }
+.title::after { content: '•••'; display: block; }
+
+img {
+    border: 0;
+  }
+
+/* ============== CV =============== */
+.cv { background-color: #1e2e32; color: #FFF; }
+
+.niveler { height: 50px; }
+
+.cv .title { color: #FFF; }
+
+.cv-icon { font-size: 1em; }
+
+/* ======================================= */
+/* ============== FOOTER   =============== */
+/* ======================================= */
+.footer { padding: 50px 0; background-color: #9FC2C7; color: #FFF; text-align: center; }
+
+.signature { font-size: 1.5em; font-family: "BallparkWeiner", georgia, times, times New Roman, cursive; }
+
+.footer-gotop { margin-top: 10px; width: 100%; text-align: center; font-size: 3em; line-height: 100%; }
+
+.link, button.link { color: #d54f58; border: none; background: none; }
+
+.reset-form { float: right; margin-top: 30px; }
+
+.btn, button.btn { position: relative; height: 55px; line-height: 55px; text-align: center; padding-left: 65px; padding-right: 20px; border-radius: 4px; color: #FFF; display: inline-block; text-transform: uppercase; background: #19bec0; border: none; margin-top: 10px; -moz-transition-duration: 300ms; -o-transition-duration: 300ms; -webkit-transition-duration: 300ms; transition-duration: 300ms; overflow: hidden; }
+.btn .fa, button.btn .fa { position: absolute; left: 0; height: 100%; line-height: 55px; width: 50px; text-align: center; background-color: #29e1e3; border-radius: 4px 0 0 4px; color: #073839; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); box-shadow: 10px 0 20px #16a8a9; }
+.btn:hover, button.btn:hover { text-decoration: none; background-color: #139193; }
+
+.btn-default { position: relative; height: 55px; line-height: 55px; text-align: center; padding-left: 65px; padding-right: 20px; border-radius: 4px; color: #FFF; display: inline-block; text-transform: uppercase; background: #19bec0; border: none; margin-top: 10px; -moz-transition-duration: 300ms; -o-transition-duration: 300ms; -webkit-transition-duration: 300ms; transition-duration: 300ms; overflow: hidden; }
+.btn-default .fa { position: absolute; left: 0; height: 100%; line-height: 55px; width: 50px; text-align: center; background-color: #29e1e3; border-radius: 4px 0 0 4px; color: #073839; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); box-shadow: 10px 0 20px #16a8a9; }
+.btn-default:hover { text-decoration: none; background-color: #139193; }
+
+.btn-danger { position: relative; height: 55px; line-height: 55px; text-align: center; padding-left: 65px; padding-right: 20px; border-radius: 4px; color: #FFF; display: inline-block; text-transform: uppercase; background: #f57d57; border: none; margin-top: 10px; -moz-transition-duration: 300ms; -o-transition-duration: 300ms; -webkit-transition-duration: 300ms; transition-duration: 300ms; overflow: hidden; }
+.btn-danger .fa { position: absolute; left: 0; height: 100%; line-height: 55px; width: 50px; text-align: center; background-color: #f57d57; border-radius: 4px 0 0 4px; color: #701b21; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); box-shadow: 10px 0 20px #f57d57; }
+.btn-danger:hover { text-decoration: none; background-color: #c32e38; }
+
+.btn-success { position: relative; height: 55px; line-height: 55px; text-align: center; padding-left: 65px; padding-right: 20px; border-radius: 4px; color: #FFF; display: inline-block; text-transform: uppercase; background: #91c46c; border: none; margin-top: 10px; -moz-transition-duration: 300ms; -o-transition-duration: 300ms; -webkit-transition-duration: 300ms; transition-duration: 300ms; overflow: hidden; }
+.btn-success .fa { position: absolute; left: 0; height: 100%; line-height: 55px; width: 50px; text-align: center; background-color: #acd390; border-radius: 4px 0 0 4px; color: #466c2b; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); box-shadow: 10px 0 20px #83bd5a; }
+.btn-success:hover { text-decoration: none; background-color: #76b548; }
+
+.btn-warning { position: relative; height: 80px; line-height: 65px; text-align: center; padding-left: 65px; padding-right: 20px; border-radius: 40px; color: #FFF; display: inline-block; text-transform: uppercase; background: #f57d57; border: none; margin-top: 10px; -moz-transition-duration: 300ms; -o-transition-duration: 300ms; -webkit-transition-duration: 300ms; transition-duration: 300ms; overflow: hidden; }
+.btn-warning .fa { position: absolute; left: 10; height: 100%; line-height: 55px; width: 50px; text-align: center; background-color: #f57d57; border-radius: 4px 0 0 4px; color: #a9300a; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); box-shadow: 20px 0 30px #f57d57; }
+.btn-warning:hover { text-decoration: none; background-color: #f57d57; }
+
+#alert-wrapp { position: fixed; z-index: 1002; top: 65px; width: 100%; height: 80px; display: none; }
+
+.alert { position: relative; width: 100%; padding: 1.3em; text-align: center; color: #FFF; background: #333; }
+.alert .close { position: absolute; top: 10px; right: 15px; color: #000; cursor: pointer; text-shadow: none; }
+
+.alert-danger { position: relative; width: 100%; padding: 1.3em; text-align: center; color: #FFF; background: #e00032; }
+
+.alert-success { position: relative; width: 100%; padding: 1.3em; text-align: center; color: #FFF; background: #1de9b6; }
+
+.alert-warning { position: relative; width: 100%; padding: 1.3em; text-align: center; color: #FFF; background: #ffb300; }
+
+
+
+
+
+
