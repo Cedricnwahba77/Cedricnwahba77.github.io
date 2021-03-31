@@ -1,29 +1,551 @@
 /* Main Navbar */
 
-#navbar-color{
-    background-color: #003367;
-    padding: -12px 15px;
-    font-family: 'Roboto', sans-serif;
-}
-@media (max-width: 1024px){
-    #navbar-color{
-        background-color: #304E89;
-        padding: -12px 15px;
-        font-family: 'Roboto', sans-serif;
-    }
-}
-#navbar-brand-color{
-    background-color: #304E89;
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 2;
+    cursor: pointer;
     padding: 15px;
-    font-family: 'Roboto', sans-serif;
-}
-.navbar{
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
-.img-navbar{
-    width: 40px;
-}
+  }
+  
+  /*  Header  */
+  header {
+    background: url(../img/player2.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 500px;
+  }
+  
+  header h1, header a, .download:hover {
+    text-decoration: none;
+    background-color: rgba(0,0,0, 0.6);
+    font-size: 3rem;
+    border: 10px solid;
+    border-color: #fbc531 #fbc531 white white;
+  }
+  
+  .download, .download:hover {
+    background-color:inherit;
+  }
+  
+  header a, .download:hover {
+    color: white;
+    font-size: 1rem;
+    border: 3px solid #f1f1f1;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .align {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .vertical-align {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*  Background Section  */
+  #picture1 {
+    background: url(../img/player1.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  #picture2 {
+    background: url(../img/webdesign01.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  #picture3 {
+    background: url(../img/webdesign02.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  #picture4 {
+    background-image: url(../img/webdesign03.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #picture5 {
+    background-image: url(../img/image_dev_web.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  #picture1, #picture2, #picture3 , #picture4, #picture5 {
+    opacity: 0.5;
+    min-height: 300px;
+  }
+  
+  /*  Section */
+  section:target {
+    padding-top: 5em;
+    margin-top: -2em;
+  }
+  
+  section {
+    padding-top: 30px;
+  }
+  
+  section h2 {
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  /*  AboutMe */
+  #aboutme {
+    max-width: 90%;
+    height: auto;
+  }
+  
+  #aboutme {
+    font-size: 1.2rem;
+  }
+  
+  /* Body */
+  header a:hover, .download {
+    color: #fbc531;
+    text-decoration: none;
+    border: 3px solid #fbc531;
+  }
+  
+  .colorA {
+    color: #fbc531;
+  }
+  
+  .colorB {
+    display: inline-block;
+    color: #fbc531;
+    font-weight: bold;
+  }
+  
+  /*  Animate */
+  .animated3 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .animated5 {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  /*  NavBar  */
+  .nav-item::after {
+    content:'';
+    display:block;
+    width:0px;
+    height:2px;
+    background:#fbc531;
+    transition: 0.2s;
+  }
+  
+  .nav-item:hover::after {
+    width:100%;
+  }
+  
+  .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color:#fbc531;
+  }
+  
+  .nav-link {
+    padding:15px 5px;transition:0.2s;
+  }
+  
+  
+  
+  /*  Skills  */
+  /*  Progress Bar Circle */
+  .progress {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+  }
+  
+  .progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .progress > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .progress .progress-left {
+    left: 0;
+  }
+  
+  .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+  }
+  
+  .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+  }
+  
+  .progress .progress-right {
+    right: 0;
+  }
+  
+  .progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+  }
+  
+  .progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: url(../img/cc.png) no-repeat bottom;
+    background-size: cover;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+  
+  /*  Circle  */
+  .progress.circle .progress-bar {
+    border-color: #fbc531 ;
+  }
+  
+  .progress.circle .progress-left .progress-bar {
+    animation: loading-1 3.6s linear forwards 3.6s;
+  }
+  
+  .progress.circle .progress-right .progress-bar {
+    animation: loading-1 3.6s linear forwards;
+  }
+  
+  /*  Language  */
+  .progress.html .progress-bar {
+    border-color: #fbc531 ;
+  }
+  
+  .progress.html .progress-left .progress-bar {
+    animation: loading-2 1s linear forwards 1.8s;
+  }
+  
+  .progress.html .progress-right .progress-bar {
+    animation: loading-1 1.8s linear forwards;
+  }
+  
+  .progress.php .progress-bar, .progress.css .progress-bar {
+    border-color: #fbc531;
+  }
+  
+  .progress.php .progress-left .progress-bar, .progress.css .progress-left .progress-bar {
+    animation: loading-3 1s linear forwards 1.8s;
+  }
+  
+  .progress.php .progress-right .progress-bar, .progress.css .progress-right .progress-bar {
+    animation: loading-1 1.8s linear forwards;
+  }
+  
+  .progress.sql .progress-bar, .progress.js .progress-bar {
+    border-color: #fbc531;
+  }
+  
+  .progress.sql .progress-right .progress-bar, .progress.js .progress-right .progress-bar {
+    animation: loading-4 1s linear forwards 1.8s ;
+  }
+  
+  /*  Framework  */
+  .progress.bs .progress-bar {
+    border-color: #fbc531;
+  }
+  
+  .progress.bs .progress-left .progress-bar {
+    animation: loading-5 1s linear forwards 1.8s;
+  }
+  
+  .progress.bs .progress-right .progress-bar {
+    animation: loading-1 1.8s linear forwards;
+  }
+  
+  .progress.jq .progress-bar {
+    border-color: #fbc531;
+  }
+  
+  .progress.jq .progress-right .progress-bar {
+    animation: loading-6 1s linear forwards 1.8s;
+  }
+  
+  .progress.ajs .progress-bar {
+    border-color: #fbc531;
+  }
+  
+  .progress.ajs .progress-right .progress-bar {
+    animation: loading-6 1s linear forwards 1.8s;
+  }
+  
+  @keyframes loading-1 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+  
+  @keyframes loading-2 { /* 90% */
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(144deg);
+      transform: rotate(144deg);
+    }
+  }
+  
+  @keyframes loading-3 { /* 60% */
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(36deg);
+      transform: rotate(36deg);
+    }
+  }
+  
+  @keyframes loading-4 { /* 30% */
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(108deg);
+      transform: rotate(108deg);
+    }
+  }
+  
+  @keyframes loading-5 { /* 70 */
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(72deg);
+      transform: rotate(72deg);
+    }
+  }
+  
+  @keyframes loading-6 { /* 10% */
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(36deg);
+      transform: rotate(36deg);
+    }
+  }
+  
+  /*  Skills / Formation  */
+  /*  Timeline  */
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+  }
+  
+  ul.timeline:before {
+    content: ' ';
+    background: #fbc531;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+  
+  ul.timeline > li {
+    padding-bottom: 50px;
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  
+  ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fbc531;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+  
+  /*  Contact */
+  #contact a {
+    color: inherit;
+  }
+  
+  #contact a:hover {
+    text-decoration: none;
+  }
+  
+  #contact h3 {
+    margin-bottom: 30px;
+  }
+  
+  .mb-60 {
+    margin-bottom: 60px;
+  }
+  
+  .services-inner {
+    border: 2px solid #fbc531;
+    margin-left: 35px;
+    transition: .3s;
+  }
+  
+  .our-services-img {
+    float: left;
+    margin-left: -36px;
+    margin-right: 22px;
+    margin-top: 28px;
+  }
+  
+  .our-services-text {
+    height: 150px;
+    padding-right: 10px;
+  }
+  
+  .our-services-text {
+    overflow: hidden;
+    padding: 28px 0 25px;
+  }
+  
+  .our-services-text h4 {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  .our-services-text h4::before {
+    background: #ec6d48 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 35px;
+  }
+  
+  .our-services-wrapper:hover .services-inner {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid transparent;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .our-services-text p {
+    margin-bottom: 0;
+  }
+  
+  
 
 /* ======================================= */
 /* ============== SECTIONS =============== */
